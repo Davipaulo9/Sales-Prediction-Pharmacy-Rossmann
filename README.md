@@ -28,3 +28,22 @@ A brief description below.
 
 
 ![CRISP_model](https://user-images.githubusercontent.com/30410050/185259805-bfa281c7-430a-4ec4-a50e-040f5563aa6d.png)
+
+# Business Assumptions
+
+Rossmann Pharmacy expected fross income is betweeen R$5000 and R$22000. 
+
+<li><strong>Stores sortment aren't equivalent in terms of type and quantity.</strong></li> 
+<li><strong>Opening days vary from store to store</li> 
+<li><strong>There are seasonal promotions that affect some but not all stores across</li> 
+
+
+# Solution Strategy
+
+I've decided to pursue the following strategy to tackle the challenge. 
+
+## Step 1. Data Description
+<li>Remove empty or invalid registries</li> 
+<li>Update Data Types on all columns</li> 
+<li></li> 
+
