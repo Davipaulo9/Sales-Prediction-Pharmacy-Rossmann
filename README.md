@@ -85,12 +85,13 @@ Since we still don't know whether the nature of the sales phenomenon is linear o
 
 The algorithms selected for the test were:
  
-<li>Linear Regressor<li/> 
+<li>Linear Regressor<li/>
 <li> Linear Regressor Regularized (Lasso)</li>
 <li> Random Forest Regressor</li>
 <li> XGBoost</li>
 
 
+*****
 
 <strong>7.2. Time Series Validation</strong>
  
