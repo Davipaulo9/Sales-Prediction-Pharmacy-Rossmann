@@ -141,7 +141,10 @@ With the model selected, trained and evaluated with a good performance, it's tim
  In response to this query, the same set of API input data is returned in json format plus an element that informs the sales forecast value for the requested store(s) and day(s) .
 
 The figure below seeks to illustrate how this process works.
- ***IMAGE***
+
+ ![API_image](rossmann_api.png)
+ 
+ 
 #9.2. Telegram BOT
  
  This API is responsible for communicating with the end user, managing welcome messages, error messages and responses to forecast requests.
