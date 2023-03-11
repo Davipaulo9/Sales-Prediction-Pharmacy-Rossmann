@@ -118,6 +118,18 @@ An overview of the model's performance and the magnitude of its intrinsic error 
  
 ![ml](ML_error.png)
  
+ 
+#8.1. Business Performance
+ 
+ After choosing our algorithm, we are now able to analyze the performance of the model from a business point of view.
+
+Below we can compare 3 main scenarios:
+
+1. The actual sum of sales for all stores during the 6 weeks
+2. The sum of sales in the scenario where the average sales of each store is generalized over 6 weeks (Mean Model)
+3. The sum of sales predicted by the model
+ 
+![bperformance](iamge.png)
 *****
 #9.0 Production Model
 With the model selected, trained and evaluated with a good performance, it's time to put it into production. For this, we chose to make the project predictions available online through the Telegram messaging application.
