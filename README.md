@@ -127,4 +127,30 @@ With this comparison, we can see that the use of a model is justified in view of
  
 *****
 #9.0 Production Model
+With the model selected, trained and evaluated with a good performance, it's time to put it into production. For this, we chose to make the project predictions available online through the Telegram messaging application.
+ In this application, the user must inform a bot created in Telegram the ID of the store which he wants to obtain the sales forecast for the next 6 weeks. Thus, the bot will return a message with the prediction
+ 
+ To carry out this task, it was necessary to create two APIs whose structures will be detailed in the topics below.
+ 
+ I hosted the app on Heroku ( will be changing platform ) 
 
+ #9.1. API Call
+ This API will be responsible for returning the sales forecast based on store attributes.
+ For the prediction to be made, it is necessary to inform the API of the attributes of the store on the day in question, such as assortment, store_type, day of the week, etc. Based on this information, the handler.py file loads the trained model, models the data by applying transformations and rescalings, and then performs the prediction.
+ 
+ In response to this query, the same set of API input data is returned in json format plus an element that informs the sales forecast value for the requested store(s) and day(s) .
+
+The figure below seeks to illustrate how this process works.
+ ***IMAGE***
+#9.2. Telegram BOT
+ 
+ This API is responsible for communicating with the end user, managing welcome messages, error messages and responses to forecast requests.
+ 
+ Once the user performs a query by informing the ID of the store he wants the forecast to be, the ***rossmann-bot.py*** file loads the attribute data of the store that is now in production (the user no longer needs to inform them), performs some treatments, transforms it into json, and then performs a query on the previously presented API, handler.py.
+ 
+ 
+ This API, as reported, returns a json with the input data plus the forecast value for each of the stores. Finally, ***rossmann-bot.py*** transforms this json, adds the predictions and informs the user via a message, the total value of the sales forecasts for the next 6 weeks
+
+The figure below seeks to illustrate this process in full:
+ 
+ ***IMAGE***
