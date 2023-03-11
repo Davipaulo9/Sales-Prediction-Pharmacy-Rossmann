@@ -77,8 +77,24 @@ Since the learning of machine learning algorithms is facilitated with numerical 
  
 # 7.0 Machine Learning Algorythms
  
-# 8.0 Algorythm Evaluation
+<strong>7.1. Assumptions </strong> 
+Given the business question presented, we then have a **Regression** problem, since the response variable must be a real value (in our case, the sales value of each store)
+
+Thus, tests were carried out with 4 algorithms where the one that presented the best performance was selected for the model
+Since we still don't know whether the nature of the sales phenomenon is linear or non-linear, we selected 2 linear and 2 non-linear algorithms.
+
+The algorithms selected for the test were:
  
+<li>Linear Regressor<li/> 
+<li> Linear Regressor Regularized (Lasso)</li>
+<li> Random Forest Regressor</li>
+<li> XGBoost</li>
+
+
+<strong>7.2. Time Series Validation</strong>
+ 
+The algorithms were evaluated using the cross validation technique, which can be illustrated in the image below:
+
+
 #9.0 Production Model
- 
 
