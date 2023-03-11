@@ -105,11 +105,22 @@ This process is important for us to evaluate the model from several different pe
 
 <strong> 7.3. Performance</strong>
 
+Applying the Cross Validation Time Series technique to the chosen algorithms, we obtain the following results:
+Although the Random Forest algorithm had the best performance, the chosen algorithm for this first CRISP cycle was XGBoost. This is due to the fact that this algorithm is leaner than Random Forest.
+
+This will make it easier to deploy this model, in addition to saving space on the servers, which is an important requirement for this project.
+
+<strong> 8.0. Performance</strong>
 
 
 
+After choosing our algorithm, we are now able to analyze the performance of the model from a business point of view.
 
+Below we can compare 3 main scenarios:
 
+1. The actual sum of sales for all stores during the 6 weeks
+2. The sum of sales in the scenario where the average sales of each store is generalized over 6 weeks (Mean Model)
+3. The sum of sales predicted by the model
 
 
 
