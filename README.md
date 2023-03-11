@@ -114,16 +114,9 @@ This will make it easier to deploy this model, in addition to saving space on th
  
 <strong> 8.0. Performance</strong>
 
-After choosing our algorithm, we are now able to analyze the performance of the model from a business point of view.
-
-Below we can compare 3 main scenarios:
-
-1. The actual sum of sales for all stores during the 6 weeks
-2. The sum of sales in the scenario where the average sales of each store is generalized over 6 weeks (Mean Model)
-3. The sum of sales predicted by the model
-
-With this comparison, we can see that the use of a model is justified in view of the use of the average for the projection of future revenue, since the deviation of the model was significantly smaller than the baseline model (average).
+An overview of the model's performance and the magnitude of its intrinsic error can be seen in the graph below.
  
+![ml](ML_error.png)
  
 *****
 #9.0 Production Model
