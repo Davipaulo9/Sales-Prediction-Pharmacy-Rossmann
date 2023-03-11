@@ -18,8 +18,7 @@ To be able to complete such massive task, he decided to request from the Data Sc
 
 <li><strong>What's the delivery method</strong></li> 
  
-
-
+In this fictional scenario, our data source is a .csv file from a Kaggle competition, but it could be from the company's database, a set of spreadsheets, or other sources. You can access the data source on https://www.kaggle.com/c/rossmann-store-sales.
 
 # Strategy
 
@@ -50,7 +49,7 @@ I've decided to pursue the following strategy to tackle the challenge.
 
  <strong>Step 4. Exploratory Data analysis: </strong> Univariate, Bivariate and Multivariate data Analysis were performed in order to obtain statistical properties. Find correlations between feattures and test hypothesis. 
  
- <strong>Step 5. Data Preparation: </strong> 
+ <strong>Step 5. Data Preparation: </strong> A boolean value was attributed to Promo column to identify if they ran a promo or not. 
  
  <strong>Step 6. Feature Selection: </strong>
  
