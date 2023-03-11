@@ -12,13 +12,16 @@ To be able to complete such massive task, he decided to request from the Data Sc
 
 # 2.0. Understanding the Business
 
+In this fictional scenario, our data source is a .csv file from a Kaggle competition, but it could be from the company's database, a set of spreadsheets, or other sources. You can access the data source on https://www.kaggle.com/c/rossmann-store-sales.
+
+
+
 <li><strong>What's the motivation?</strong></li> Requested by the CFO to remodel the stores.
 
 <li><strong> What is the root problem?</strong></li> Dificulty in determine the investment amount available for the remodeling.
 
 <li><strong>What's the delivery method</strong></li> 
  
-In this fictional scenario, our data source is a .csv file from a Kaggle competition, but it could be from the company's database, a set of spreadsheets, or other sources. You can access the data source on https://www.kaggle.com/c/rossmann-store-sales.
 
 # Strategy
 
@@ -30,31 +33,52 @@ A brief description below.
 
 # 3.0 Business Assumptions
 
-Rossmann Pharmacy expected fross income is betweeen R$5000 and R$22000. 
+Rossmann Pharmacy expected gross income is betweeen R$5000 and R$22000. 
 
 <li><strong>Stores sortment aren't equivalent in terms of type and quantity.</strong></li> 
 <li><strong>Opening days vary from store to store</li> 
 <li><strong>There are seasonal promotions that affect some but not all stores across</li> 
 
 
-# 4.0 Solution Strategy
+# 4.0 Data Collection
 
-I've decided to pursue the following strategy to tackle the challenge.
+After data collection, the data cleaning step began. This step covered some topics such as:
  
- <strong>Step 1. Data Description: </strong>Remove empty or invalid registries. Update Data Types on all columns.
+ <strong>Step 1. Data Description: </strong>The types of variables available in the dataset were checked and transformed to the most convenient types.
+ 
+ <strong>2. Treatment of null values: </strong> At this stage, a set of assumptions was assumed to fill in these values ​​and can be checked in more detail in the notebook of this project.
+ 
+ <strong>Step 3. Data Filtering: </strong> Finally, variables considered irrelevant for our project were removed, such as the days on which the stores were closed. In addition, variables that would not be available at the time of prediction, such as the number of customers, were excluded.
+ 
+ 
+ # 5.0  Exploratory Data Analysis
+ 
+In order to understand how the variables impact the sales phenomenon and the intensity of this impact, the business team built a list of hypotheses that will then be put to the test by the data team. Below is shown some of the hypotheses and their subsequent validation or invalidation by the tests performed.
+ 
 
- <strong>Step 2. Feature Engineering: </strong> Derived new features to pursue a thourough analysis
+# 6.0 Data Modelling
+Since the learning of machine learning algorithms is facilitated with numerical data that are on the same scale, Rescaling, Encoding and Transformation techniques were applied in order to prepare the data for training the machine learning model.
+ 
+ <strong>6.1. Numerical Variables</strong>
+ As most of the numerical variables in the set do not have a normal distribution, Rescaling methods were applied.
+ 
+ <strong>6.2. Categorical Variables</strong>
+ For variables such as *store_type* and *assortment*, which are categorical in nature, **Label Encoding** was used
+ 
+ <strong>6.3. Scalling</strong>
+ As our response variable, sales, does not have a normal distribution, in order to facilitate learning the algorithm, a logarithm-type transformation was applied
+ 
+ <strong>6.4. Transformation </strong>
+ In order to respect the cyclical nature of temporal variables such as day, day of the week, week and month, sine and cosine cyclic transformations were applied.
+ 
+ <strong>6.5. Feature Selection </strong>
+ Finally, the Boruta algorithm was used in order to identify the features with greater relevance to the model. The variables indicated by Boruta as being the best   were chosen for model training.
+ 
+ 
+# 7.0 Machine Learning Algorythms
+ 
+# 8.0 Algorythm Evaluation
+ 
+#9.0 Production Model
+ 
 
- <strong>Step 3. Data Filtering: </strong> Data that isn't important or will not impact our analysis will be dropped out. 
-
- <strong>Step 4. Exploratory Data analysis: </strong> Univariate, Bivariate and Multivariate data Analysis were performed in order to obtain statistical properties. Find correlations between feattures and test hypothesis. 
- 
- <strong>Step 5. Data Preparation: </strong> A boolean value was attributed to Promo column to identify if they ran a promo or not. 
- 
- <strong>Step 6. Feature Selection: </strong>
- 
- <strong>Step 7. Machine earning Modelling: </strong>
- 
- <strong>Step 8. Model-2-Business: </strong>
- 
- <strong>Step 9. Deploy Model to Production: </strong>
