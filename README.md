@@ -29,7 +29,7 @@ A brief description below.
 
 ![CRISP_model](https://user-images.githubusercontent.com/30410050/185259805-bfa281c7-430a-4ec4-a50e-040f5563aa6d.png)
 
-# Business Assumptions
+# 3.0 Business Assumptions
 
 Rossmann Pharmacy expected fross income is betweeen R$5000 and R$22000. 
 
@@ -38,7 +38,7 @@ Rossmann Pharmacy expected fross income is betweeen R$5000 and R$22000.
 <li><strong>There are seasonal promotions that affect some but not all stores across</li> 
 
 
-# Solution Strategy
+# 4.0 Solution Strategy
 
 I've decided to pursue the following strategy to tackle the challenge.
  
