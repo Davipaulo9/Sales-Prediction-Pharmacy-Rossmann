@@ -42,8 +42,9 @@ Rossmann Pharmacy expected fross income is betweeen R$5000 and R$22000.
 
 I've decided to pursue the following strategy to tackle the challenge. 
 
-## Step 1. Data Description
+### Step 1. Data Description
 <li>Remove empty or invalid registries</li> 
 <li>Update Data Types on all columns</li> 
-<li></li> 
+
+### Step 2. <strong>Feature Engineering </strong>
 
