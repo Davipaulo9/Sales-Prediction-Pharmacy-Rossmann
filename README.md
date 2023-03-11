@@ -9,7 +9,7 @@
 
 Rossmann's Chief Financial Officer will be implementing within the next weeks important remodeling across all units for the drugstore chain. 
 To be able to complete such massive task, he decided to request from the Data Science team, a sales's projection for the next six weeks. With this information in hands, a responsible payment plan can be implemented with minimum financial risks to the stakeholders.  
-
+*****
 # 2.0. Understanding the Business
 
 In this fictional scenario, our data source is a .csv file from a Kaggle competition, but it could be from the company's database, a set of spreadsheets, or other sources. You can access the data source on https://www.kaggle.com/c/rossmann-store-sales.
@@ -30,7 +30,7 @@ A brief description below.
 
 
 ![CRISP_model](https://user-images.githubusercontent.com/30410050/185259805-bfa281c7-430a-4ec4-a50e-040f5563aa6d.png)
-
+*****
 # 3.0 Business Assumptions
 
 Rossmann Pharmacy expected gross income is betweeen R$5000 and R$22000. 
@@ -39,7 +39,7 @@ Rossmann Pharmacy expected gross income is betweeen R$5000 and R$22000.
 <li><strong>Opening days vary from store to store</li> 
 <li><strong>There are seasonal promotions that affect some but not all stores across</li> 
 
-
+*****
 # 4.0 Data Collection
 
 After data collection, the data cleaning step began. This step covered some topics such as:
@@ -49,12 +49,12 @@ After data collection, the data cleaning step began. This step covered some topi
  <strong>2. Treatment of null values: </strong> At this stage, a set of assumptions was assumed to fill in these values ​​and can be checked in more detail in the notebook of this project.
  
  <strong>Step 3. Data Filtering: </strong> Finally, variables considered irrelevant for our project were removed, such as the days on which the stores were closed. In addition, variables that would not be available at the time of prediction, such as the number of customers, were excluded.
- 
+ *****
  
  # 5.0  Exploratory Data Analysis
  
 In order to understand how the variables impact the sales phenomenon and the intensity of this impact, the business team built a list of hypotheses that will then be put to the test by the data team. Below is shown some of the hypotheses and their subsequent validation or invalidation by the tests performed.
- 
+ *****
 
 # 6.0 Data Modelling
 Since the learning of machine learning algorithms is facilitated with numerical data that are on the same scale, Rescaling, Encoding and Transformation techniques were applied in order to prepare the data for training the machine learning model.
@@ -74,6 +74,7 @@ Since the learning of machine learning algorithms is facilitated with numerical 
  <strong>6.5. Feature Selection </strong>
  Finally, the Boruta algorithm was used in order to identify the features with greater relevance to the model. The variables indicated by Boruta as being the best   were chosen for model training.
  
+ *****
  
 # 7.0 Machine Learning Algorythms
  
@@ -91,7 +92,7 @@ The algorithms selected for the test were:
 <li> XGBoost</li>
 
 
-*****
+
 
 <strong>7.2. Time Series Validation</strong>
  
@@ -110,7 +111,7 @@ Applying the Cross Validation Time Series technique to the chosen algorithms, we
 Although the Random Forest algorithm had the best performance, the chosen algorithm for this first CRISP cycle was XGBoost. This is due to the fact that this algorithm is leaner than Random Forest.
 
 This will make it easier to deploy this model, in addition to saving space on the servers, which is an important requirement for this project.
-
+*****
 <strong> 8.0. Performance</strong>
 
 
@@ -124,6 +125,6 @@ Below we can compare 3 main scenarios:
 3. The sum of sales predicted by the model
 
 
-
+*****
 #9.0 Production Model
 
