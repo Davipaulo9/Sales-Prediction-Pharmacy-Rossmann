@@ -129,7 +129,7 @@ Below we can compare 3 main scenarios:
 2. The sum of sales in the scenario where the average sales of each store is generalized over 6 weeks (Mean Model)
 3. The sum of sales predicted by the model
  
-![bperformance](iamge.png)
+![bperformance](image.png)
 *****
 #9.0 Production Model
 With the model selected, trained and evaluated with a good performance, it's time to put it into production. For this, we chose to make the project predictions available online through the Telegram messaging application.
