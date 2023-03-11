@@ -91,6 +91,7 @@ The algorithms selected for the test were:
 <li> XGBoost</li>
 
 
+
 <strong>7.2. Time Series Validation</strong>
  
 The algorithms were evaluated using the cross validation technique, which can be illustrated in the image below:
