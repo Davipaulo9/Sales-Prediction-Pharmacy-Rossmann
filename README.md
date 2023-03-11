@@ -95,6 +95,22 @@ The algorithms selected for the test were:
  
 The algorithms were evaluated using the cross validation technique, which can be illustrated in the image below:
 
+From the entire available data set, a portion is separated for training and another for testing and then the performance is evaluated.
+
+- In a second iteration, another portion of the data is used for training and another for testing.
+- In a third iteration, the training and validation plots are modified again and so on (always respecting the data chronology), until the entire data set is used.
+
+This process is important for us to evaluate the model from several different perspectives, presenting a more reliable result of its real performance.
+
+<strong> 7.3. Performance</strong>
+
+
+
+
+
+
+
+
 
 #9.0 Production Model
 
