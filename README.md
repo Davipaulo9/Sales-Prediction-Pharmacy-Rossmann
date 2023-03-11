@@ -40,11 +40,22 @@ Rossmann Pharmacy expected fross income is betweeen R$5000 and R$22000.
 
 # Solution Strategy
 
-I've decided to pursue the following strategy to tackle the challenge. 
+I've decided to pursue the following strategy to tackle the challenge.
+ 
+ <strong>Step 1. Data Description: </strong>Remove empty or invalid registries. Update Data Types on all columns.
 
-### Step 1. Data Description
-<li>Remove empty or invalid registries</li> 
-<li>Update Data Types on all columns</li> 
+ <strong>Step 2. Feature Engineering: </strong> Derived new features to pursue a thourough analysis
 
-### Step 2. <strong>Feature Engineering </strong>
+ <strong>Step 3. Data Filtering: </strong> Data that isn't important or will not impact our analysis will be dropped out. 
 
+ <strong>Step 4. Exploratory Data analysis: </strong> Univariate, Bivariate and Multivariate data Analysis were performed in order to obtain statistical properties. Find correlations between feattures and test hypothesis. 
+ 
+ <strong>Step 5. Data Preparation: </strong> 
+ 
+ <strong>Step 6. Feature Selection: </strong>
+ 
+ <strong>Step 7. Machine earning Modelling: </strong>
+ 
+ <strong>Step 8. Model-2-Business: </strong>
+ 
+ <strong>Step 9. Deploy Model to Production: </strong>
