@@ -154,3 +154,5 @@ The figure below seeks to illustrate how this process works.
 The figure below seeks to illustrate this process in full:
  
  ***IMAGE***
+
+ ![Screenshot](cross_validation1.png)
